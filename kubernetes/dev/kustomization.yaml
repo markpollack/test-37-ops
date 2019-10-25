@@ -2,12 +2,10 @@ commonLabels:
   variant: dev
 commonAnnotations:
   note: Hello, I am dev!
-  note2: changed to force update to latest
 images:
   - name: docker.io/spring/testapp  #used for Kustomize matching
     newName: docker.io/markpollack/testing
-    newTag: latest
+    newTag: 382ce8568d65ef57bc1a0e6606066fbb4a68715b
 resources:
   - ../base
-patchesStrategicMerge:
-  - deployment.yaml  # set pull-policy to Always (to pull latest or snapshots tags), use 2 instances
+
