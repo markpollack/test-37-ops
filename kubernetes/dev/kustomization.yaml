@@ -5,7 +5,8 @@ commonAnnotations:
 images:
   - name: docker.io/spring/testapp  #used for Kustomize matching
     newName: docker.io/markpollack/testing
-    newTag: b9eb7d9f66559ab221a87925b8fb63d779b46eb8
+    newTag: 8f0df65d4ceeb1cd189d2ff1ec2797267d89442b
 resources:
   - ../base
+  - deployment.yaml
 
